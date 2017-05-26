@@ -1,8 +1,8 @@
 // Copyright 2017 Mironova Anna
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
 #include <string.h>
 #include <string>
 #include <sstream>
@@ -19,8 +19,8 @@ void QueueApp::help(const char* appname, const char* message) {
         "Please provide arguments in the following format:\n\n" +
         "  $ " + appname + " <operation> <element if push>\n\n " +
         "Where element is int-precision number, " +
-        "and <operation> is one of 'push', 'pop', 'top', " +
-        "'length', 'last', 'first'.\n";
+        "and <operation> is one of 'push', 'pop', " +
+        "'top', 'length', 'last', 'first'.\n";
 }
 
 bool QueueApp::validateNumberOfArguments(int argc, const char** argv) {
@@ -77,7 +77,7 @@ std::string QueueApp::operator()(int argc, const char** argv) {
             args.element = parseInt(argv[2]);
         }
     }
-    catch (std::string str) {
+    catch (std::string &str) {
         return str;
     }
 
