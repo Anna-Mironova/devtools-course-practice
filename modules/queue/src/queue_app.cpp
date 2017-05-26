@@ -94,13 +94,13 @@ std::string QueueApp::operator()(int argc, const char** argv) {
         stream << "element = " << queue.Top() << " ";
         break;
     case 4:
-        stream << "length = " << queue.GetQueueLen() << " ";
+        // stream << "length = " << queue.GetQueueLen() << " ";
         break;
     case 5:
-        stream << "last = " << queue.GetQueueTail() << " ";
+        // stream << "last = " << queue.GetQueueTail() << " ";
         break;
     case 6:
-        stream << "first = " << queue.GetQueueHead() << " ";
+       // stream << "first = " << queue.GetQueueHead() << " ";
         break;
     }
 
