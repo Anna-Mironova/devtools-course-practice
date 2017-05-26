@@ -18,10 +18,10 @@ class Queue {
     void Push(const valType&);
     valType Pop();
     valType Top();
-   // int GetQueueMaxSize() const;
-   // int GetQueueLen() const;
-   // int GetQueueHead() const;
-   // int GetQueueTail() const;
+    // int GetQueueMaxSize() const;
+    // int GetQueueLen() const;
+    // int GetQueueHead() const;
+    // int GetQueueTail() const;
 
  private:
     int head_, tail_, len_, max_size_;
